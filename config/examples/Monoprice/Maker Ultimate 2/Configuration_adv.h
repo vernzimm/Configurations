@@ -1702,7 +1702,7 @@
    * LED Control Menu
    * Add LED Control to the LCD menu
    */
-  #define LED_CONTROL_MENU
+  //#define LED_CONTROL_MENU
   #if ENABLED(LED_CONTROL_MENU)
     #define LED_COLOR_PRESETS                 // Enable the Preset Color menu option
     //#define NEO2_COLOR_PRESETS              // Enable a second NeoPixel Preset Color menu option
@@ -2321,13 +2321,13 @@
  * Display Sleep
  * Enable this option to save energy and prevent OLED pixel burn-in.
  */
-#define DISPLAY_SLEEP_MINUTES 15       // (minutes) Timeout before turning off the screen
+//#define DISPLAY_SLEEP_MINUTES 15       // (minutes) Timeout before turning off the screen
 
 /**
  * LCD Backlight Timeout
  * Requires a display with a controllable backlight
  */
-#define LCD_BACKLIGHT_TIMEOUT_MINS 15  // (minutes) Timeout before turning off the backlight
+//#define LCD_BACKLIGHT_TIMEOUT_MINS 15  // (minutes) Timeout before turning off the backlight
 
 #if defined(DISPLAY_SLEEP_MINUTES) || defined(LCD_BACKLIGHT_TIMEOUT_MINS)
   #define EDITABLE_DISPLAY_TIMEOUT      // Edit sleep / backlight timeout with M255 S<minutes> and a menu item
@@ -2673,7 +2673,7 @@
 // @section motion
 
 // Moves (or segments) with fewer steps than this will be joined with the next move
-#define MIN_STEPS_PER_SEGMENT 6
+#define MIN_STEPS_PER_SEGMENT 1
 
 /**
  * Minimum delay before and after setting the stepper DIR (in ns)
@@ -2794,7 +2794,7 @@
  * Currently handles M108, M112, M410, M876
  * NOTE: Not yet implemented for all platforms.
  */
-//#define EMERGENCY_PARSER
+#define EMERGENCY_PARSER
 
 /**
  * Realtime Reporting (requires EMERGENCY_PARSER)
